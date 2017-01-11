@@ -1,0 +1,14 @@
+
+div#main {
+    width: 70%;
+    margin: auto;
+    margin-top: 20 px;
+    background-color:aliceblue;
+    color: #0a0a1a;
+    box-shadow: 0px 0px 20px black;
+}
+
+body {
+    background-color:darkslategray;
+    font-family: "Georgia", sans-serif;
+}
