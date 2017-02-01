@@ -1,0 +1,12 @@
+body{
+    background-color:azure;
+}
+h1{
+    font-family:"Georgia", serif;
+    color:#a0a0a0;
+    text-align: center;
+}
+p{
+    font-size:14pt;
+    color:limegreen;
+}
