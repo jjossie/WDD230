@@ -1,16 +1,15 @@
-
 div#wrapper {
     width: 70%;
     margin: auto;
     margin-top: 50 px;
-    padding:20px;
-    background-color:whitesmoke;
+    padding: 20px;
+    background-color: whitesmoke;
     color: #0a0a1a;
     box-shadow: 0px 0px 20px black;
 }
 
 body {
-    background-color:slategray;
+    background-color: slategray;
     font-family: "Georgia", sans-serif;
 }
 
