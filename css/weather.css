@@ -39,7 +39,7 @@ main div p {
 }
 
 #wind {
-    margin-left: 3%;
+    margin-left: 2%;
 }
 
 #precip-descrip {
@@ -71,6 +71,10 @@ main div {
 
 #temperatures {
     width: auto;
+}
+
+#temperatures>img {
+    display: inline-block;
 }
 
 main>p {
