@@ -1,48 +1,58 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Sandbox</title>
-    <link rel="stylesheet" type="text/css" href="../css/html-css.css" media="screen">
+    <meta charset="UTF-8">
+    <title>Demo Weather Page</title>
+    <link rel="stylesheet" type="text/css" href="html-css.css" media="screen">
     <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
     <div id="wrapper">
         <header id="page-header">
-            <p>m'name'sjeff,theweatherguy</p>
+            <p>Weather</p>
             <form id="page-search">
-                <input type="search" placeholder="Search by city, ZIP code" name="q">
+                <input id="search-box" type="search" placeholder="Search by city, zipcode" name="q">
                 <input type="submit" name="submit">
             </form>
         </header>
         <nav id="page-nav">
             <ul>
-                <li><a href="sandbox_template.html">Template</a></li>
                 <li>Home</li>
                 <li>Franklin</li>
-                <li>Greenville</li>
                 <li>Springfield</li>
+                <li>Greenville</li>
             </ul>
         </nav>
         <main>
             <h1>Springfield, IL</h1>
             <ul id="hi-lo">
                 <li>High
-                    <br>77&deg;<sup>F</sup>
-                </li>
-                <li><img src="#" alt="partly cloudy"></li>
+                    <br>77&deg;<sup>F</sup></li>
+                <li id="conditions"><img src="partly-cloudy_small.png" alt="partly cloudy">
+                    <br>Partly Cloudy</li>
                 <li>Low
-                    <br>40&deg;<sup>F</sup>
-                </li>
-                <li></li>
+                    <br>48&deg;<sup>F</sup></li>
             </ul>
+            <ul>
+                <li>Precipitation
+                    <br> 0%
+                </li>
+                <li>Wind
+                    <br> 5 - 15</li>
+                <li>Direction
+                    <br> NW
+                </li>
+            </ul>
+            <h2>Cities Near You:</h2>
+
 
 
         </main>
-        <footer></footer>
+        <footer id="page-footer"></footer>
     </div>
+
 </body>
 
 </html>

@@ -1,0 +1,133 @@
+/*Change the CSS Box model to the border box*/
+
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/*Start with a Mobile First (small screen) approach*/
+
+
+/*Sets the general style of the body and wrapper*/
+
+body {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#wrapper {
+    background-color: #fff;
+    width: 100%;
+    font-size: 1em;
+    /* By moving this out of body, the browser CSS does not equal the em unit */
+    padding: .25em;
+    position: relative;
+}
+
+
+/*Set the Page Header and descendent styles*/
+
+#page-header p {
+    margin: 0 0 .5em 0;
+}
+
+#page-header form {
+    border: 1px solid #000;
+}
+
+
+/*Make the search field 80% wide*/
+
+
+/*
+#search-box {
+    width: 80%;
+}
+*/
+
+header>form>input:nth-of-type(1)
+/*Set the Page Navigation and descendent styles*/
+
+#page-nav {
+    position: absolute;
+    top: .25em;
+    right: 0;
+    width: 30%;
+}
+
+#page-nav ul {
+    display: none;
+}
+
+#page-nav:before {
+    content: "Menu";
+    display: block;
+}
+
+
+/*Set the Main element and descendent styles*/
+
+h1 {
+    text-align: center;
+}
+
+#hi-lo {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#hi-lo>li {
+    display: inline-block;
+    width: 24%;
+    /* Browser rounding errors force this down */
+    text-align: center;
+    vertical-align: top;
+    font-size: 1.5em;
+}
+
+#hi-lo #conditions {
+    width: 49%;
+    /* Browser rounding errors force this down */
+}
+
+main ul:nth-of-type(2) {
+    border: 1px solid #000;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+main ul:nth-of-type(2) li {
+    width: 32%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+    padding: .05em;
+}
+
+
+/*Make the precipitation and wind titles bold*/
+
+main h2 {
+    text-align: center;
+    margin: .1em;
+}
+
+
+/*Set the Page Footer and descendent styles*/
+
+
+/*Media Query for Medium Size screens*/
+
+
+/*Media Query for Large Size screens*/
