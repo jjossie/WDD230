@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <meta name="viewport" content="width=device-width">
+    <style>
+        h1,
+        h2 {
+            color: dodgerblue;
+        }
+
+        #three {
+            text-align: center;
+            width: 28%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1></h1>
+        </header>
+        <nav>
+            <p><a href="/index.html">Back to Joel Jossie's Github Home</a></p>
+        </nav>
+        <main>
+            <h1>CSS Implementation</h1>
+            <section>
+                <h3>How do we apply CSS to an HTML document?</h3>
+                <img src="images/ex_html.PNG" alt="example html">
+                <img src="images/ex_css.PNG" alt="example css">
+            </section>
+            <section id="three">
+                <h2>The Three Methods</h2>
+                <ul>
+                    <li>The Good: External Styling</li>
+                    <li>The Bad: Internal Styling</li>
+                    <li>The Ugly: Inline Styling</li>
+                </ul>
+            </section>
+            <section>
+                <h2>The Good Method: External Styling</h2>
+                <ul>
+                    <li>Uses a separate .css file to store all CSS code</li>
+                    <li>Uses a <code>link</code> tag within the <code>head</code> tag to link the CSS document to the HTML document</li>
+                </ul>
+                <img src="images/html_external.PNG" alt="external css">
+            </section>
+            <section>
+                <h3>External Styling: Why it’s good</h3>
+                <ul>
+                    <li>Allows the same code to be used in multiple documents</li>
+                    <li>Consistency</li>
+                    <li>Ease of editing</li>
+                    <li>Keeping files separate allows for better organization of web server content</li>
+                    <li>Leaves plenty of space to work with (rather than working inside an HTML document)</li>
+                </ul>
+            </section>
+
+
+
+            <section>
+                <h2>The Bad Method: Internal Styling</h2>
+                <ul>
+                    <li>Stores all CSS code within the HTML document</li>
+                    <li>Code must be within <code>style</code> tags</li>
+                    <li><code>style</code> tags must be within <code>head</code></li>
+                </ul>
+                <img src="images/html_internal.PNG" alt="internal css">
+            </section>
+            <section>
+                <h3>Internal Styling: Why it’s bad</h3>
+                <ul>
+                    <li>Clutters up the <code>head</code> element</li>
+                    <li>Is used to style an entire document, but is not used in a way that would allow other web pages to use the same style (inconsistency)</li>
+                    <li>Lazy</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Internal Styling: Why use it at all?</h3>
+                <ul>
+                    <li>Can be used to style an entire webpage differently than other webpages on the same website</li>
+                    <li>It’s sorta easier, I guess (if you’re really lazy)</li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2>The Ugly Method: Inline Styling</h2>
+                <ul>
+                    <li>HTML elements are styled individually within the document</li>
+                    <li>To style an HTML element, the <code>style</code> attribute is used</li>
+                    <li>CSS properties and values are stored in quotes as the value for the <code>style</code> attribute</li>
+                </ul>
+                <img src="images/html_inline.PNG" alt="inline css">
+            </section>
+            <section>
+                <h3>Inline Styling: Why it’s ugly</h3>
+                <ul>
+                    <li>Clutters up individual element tags</li>
+                    <li>Difficult to use proper syntax checking/highlighting</li>
+                    <li>Only applies to each element on which it’s used (i.e. cannot style one <code>h1</code> and have the style apply to all the others)</li>
+                    <li>Looks gross</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Inline Styling: Why use it at all?</h3>
+                <ul>
+                    <li>Can be used to make individual elements appear differently than they otherwise would</li>
+                    <li>Sometimes this is what you want, but not often</li>
+                    <li>Still better than using old HTML attributes, such as <code>align, border, bgcolor, color</code></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Final Results</h2>
+                <p>All three methods will produce this same webpage:</p>
+                <img src="images/webpage.PNG" alt="webpage">
+            </section>
+
+
+        </main>
+        <footer>
+            <ul>
+                <li>&copy;2017</li>
+                <li>
+                    Joel Jossie
+                </li>
+                <li>Last Updated: 2/11/2017
+
+                </li>
+            </ul>
+            <p> </p>
+        </footer>
+    </div>
+</body>
+
+</html>
