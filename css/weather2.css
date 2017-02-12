@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: deepskyblue;
+    color: white;
+}
+
+header {
+    background-color: aliceblue;
+    color: black;
+}
+
+header h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+main div p {
+    display: inline-block;
+    width: auto;
+    font-size: 18px;
+}
+
+.weather-descriptions {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+}
+
+#wind {
+    margin-left: 2%;
+}
+
+#precip-descrip {
+    display: inline-block;
+    width: auto;
+    font-size: 14px;
+}
+
+#current-temp {
+    font-size: 80pt;
+    margin: 0;
+}
+
+#hi-lo {
+    display: inline-block;
+}
+
+#hi-lo>p {
+    font-size: 40px;
+    display: block;
+    margin: 0;
+}
+
+main div {
+    background-color: aliceblue;
+    border-radius: 10px;
+    color: black;
+}
+
+#temperatures {
+    width: auto;
+}
+
+#temperatures>img {
+    display: inline-block;
+}
+
+main>p {
+    font-size: 18px;
+}
+
+#hourly {
+    display: none;
+}
+
+@media only screen and (min-width: 480px) {
+    #wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #hourly {
+        display: block;
+    }
+    #hourly>p {
+        display: block;
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        display: inline-block;
+        width: 20%;
+    }
+    main {
+        display: inline-block;
+        width: 58%;
+    }
+}
