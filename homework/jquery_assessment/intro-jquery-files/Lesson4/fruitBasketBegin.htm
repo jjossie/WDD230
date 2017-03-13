@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fruit Basket</title>
+    <link rel="stylesheet" href="css/fruitBasket.css">
+    <!--    <script src="js/jquery-3.0.0.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script>
+        $(function () {
+            // Array containing Objects with Fruit names & quantities
+            var fruitBasket = [{
+                    title: 'Apples',
+                    quantity: 20
+                },
+                {
+                    title: 'Oranges',
+                    quantity: 25
+                },
+                {
+                    title: 'Kiwis',
+                    quantity: 50
+                },
+                {
+                    title: 'Strawberries',
+                    quantity: 45
+                },
+                {
+                    title: 'Bananas',
+                    quantity: 10
+                },
+                {
+                    title: 'Mangoes',
+                    quantity: 5
+                },
+                {
+                    title: 'Tomatoes',
+                    quantity: 30
+                }];
+
+            // Your jQuery code goes here
+            $.each(fruitBasket, function (index, element) {
+                $('.fruits').append("<li>We have " + element.quantity + " " + element.title);
+            })
+            $('.fruits').each(function (index, element) {
+                $(element).children('li').css("background-color", "rgb(100, 200, 0)");
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="fruits">
+
+
+        </ul>
+    </div>
+</body>
+
+</html>
