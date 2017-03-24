@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: deepskyblue;
+    margin: 0;
+}
+
+header {
+    background-color: aliceblue;
+    color: black;
+}
+
+header h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+main div p {
+    display: inline-block;
+    width: auto;
+    font-size: 18px;
+}
+
+.weather-descriptions {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+}
+
+#wind {
+    margin-left: 2%;
+}
+
+#precip-descrip {
+    display: inline-block;
+    width: auto;
+    font-size: 14px;
+}
+
+#current-temp {
+    font-size: 80pt;
+    margin: 0;
+}
+
+#hi-lo {
+    display: inline-block;
+}
+
+#hi-lo>p {
+    font-size: 40px;
+    display: block;
+    margin: 0;
+}
+
+
+/*
+main div {
+    background-color: aliceblue;
+    border-radius: 10px;
+    color: black;
+}
+*/
+
+#temperatures {
+    width: auto;
+}
+
+#temperatures>img {
+    display: inline-block;
+}
+
+main>p {
+    font-size: 18px;
+}
+
+
+/* ---- Hourly Weather Style ---- */
+
+#hourly {
+    display: none;
+}
+
+.hour {
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    border-left: 1px solid black;
+    display: inline-block;
+}
+
+.hour>p {
+    display: block;
+    margin: 10px;
+}
+
+.hour>p:nth-child(1) {
+    font-size: .8em;
+}
+
+.hour>p:nth-child(2) {
+    font-size: 1.5em;
+}
+
+#wrapper {
+    background-color: aliceblue;
+    margin-top: 0;
+}
+
+
+/* ---- Navigation Style ----*/
+
+nav li {
+    list-style: none;
+    display: block;
+    height: 50px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li a:link,
+nav li a:visited {
+    color: deepskyblue;
+}
+
+nav li a:hover,
+nav li a:active {
+    color: dodgerblue;
+}
+
+@media only screen and (min-width: 480px) {
+    #wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #hourly {
+        display: block;
+    }
+    #hourly>p {
+        display: block;
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        flex-grow: 2;
+    }
+    main {
+        flex-grow: 3;
+        padding: 40px;
+    }
+    #nav-content-wrapper {
+        display: flex;
+    }
+}
