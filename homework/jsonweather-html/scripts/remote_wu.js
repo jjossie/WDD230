@@ -23,7 +23,7 @@ $(function () {
     // Get the data from the wunderground API
     function getData(lat, long) {
         $.ajax({
-            url: "http://api.wunderground.com/api/f9257c30517cc1f7/geolookup/q/" + lat + "," + long + ".json",
+            url: "https://api.wunderground.com/api/f9257c30517cc1f7/geolookup/q/" + lat + "," + long + ".json",
             dataType: "jsonp",
             success: function (data) {
                 //Create a location string and apply the data to the HTML
@@ -36,7 +36,7 @@ $(function () {
                 $('title').prepend(location + " ");
 
                 //create an API call URL, get the weather conditions
-                var conditionsURL = "http://api.wunderground.com/api/f9257c30517cc1f7/conditions/q/" + data.location.state + "/" + data.location.city + ".json";
+                var conditionsURL = "https://api.wunderground.com/api/f9257c30517cc1f7/conditions/q/" + data.location.state + "/" + data.location.city + ".json";
                 getConditions(conditionsURL);
 
             }
