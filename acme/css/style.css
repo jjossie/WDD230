@@ -1,0 +1,90 @@
+body {
+    background: url(../images/site/background.jpg) no-repeat fixed center;
+    background-color: #f7f193;
+    background-size: contain;
+    font-family: "Arial", sans-serif;
+}
+
+#container {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+
+/*Header and Navigation*/
+
+header {
+    background-color: #FFFFFF;
+    color: #de2226;
+    font-size: 1.5em;
+}
+
+nav {
+    background-color: #990033;
+    color: #FFFFFF;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+nav li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 12pt;
+}
+
+
+/* Main Styling */
+
+main {
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#home {
+    width: inherit;
+}
+
+#hero {
+    background-image: url('/acme/images/site/feature.jpg');
+    width: inherit;
+    height: 408px;
+}
+
+#content {
+    display: none;
+    flex-flow: row wrap;
+}
+
+#recipes {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.recipe {
+    font-size: .8em;
+    width: 120px;
+    height: 120px;
+}
+.recipe img{
+    display: block;
+    margin: auto;
+}
+.recipe p{
+    text-align: center;
+}
