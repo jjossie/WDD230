@@ -6,7 +6,7 @@ body {
 }
 
 #container {
-    width:100%;
+    width: 100%;
     background-color: #FFFFFF;
 }
 
@@ -29,6 +29,7 @@ nav ul {
     display: flex;
     flex-flow: row wrap;
     margin: 0;
+    height: inherit;
 }
 
 nav li {
@@ -38,6 +39,7 @@ nav li {
     padding: 5px;
     font-size: 12pt;
     cursor: pointer;
+
 }
 
 nav li a {
@@ -45,15 +47,21 @@ nav li a {
     text-decoration: none;
     padding: 5px;
     font-size: 12pt;
+    vertical-align: middle;
+    height: inherit;
 }
 
 
 /* Main Styling */
 
 main {
-    width: inherit;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    /*
     display: flex;
     flex-wrap: wrap;
+*/
 }
 
 #home {
@@ -61,14 +69,47 @@ main {
 }
 
 #hero {
-    background-image: url('/acme/images/site/feature.jpg');
+    background: url('/acme/images/site/feature.jpg') no-repeat left;
     width: inherit;
     height: 408px;
+    max-width: 757px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#hero-desc {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 40px;
+    margin-right: 10px;
+    height: auto;
+}
+
+#lower-area {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#lower-area>section {
+    /*
+    min-width: 200px;
+    max-width: 500px;
+*/
+}
+
+#recipes-section {
+    max-width: 500px;
+    flex-basis: 500px;
+}
+
+#reviews-section {
+    max-width: 300px;
+    flex-basis: 300px;
 }
 
 #content {
     display: none;
-    flex-flow: row wrap;
 }
 
 #recipes {
@@ -81,22 +122,28 @@ main {
     width: 120px;
     height: 120px;
 }
-.recipe img{
+
+.recipe img {
     display: block;
     margin: auto;
 }
-.recipe p{
+
+.recipe p {
     text-align: center;
 }
+
 #product-image img {
-    max-width:70%;
-}
-figure{
-    max-width:350px;
+    max-width: 70%;
 }
 
+figure {
+    max-width: 350px;
+}
+
+
 /*Footer*/
-footer{
+
+footer {
     padding: 15px;
     border-top: 1px solid black;
 }
@@ -104,8 +151,8 @@ footer{
 
 /*Media Queries*/
 
-@media only screen and (min-device-width: 700px){
-    #container{
+@media only screen and (min-width: 700px) {
+    #container {
         width: 70%;
         margin: auto;
     }

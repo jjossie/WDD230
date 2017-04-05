@@ -40,7 +40,13 @@ function makePage(name) {
     info.append("<li>" + "Manufactured by: " + dat.manufacturer + "</li>");
     info.append("<li>Reviews: " + dat.reviews + "/5 stars</li>");
 
-    cont.show();
+    //add title
+    $('title').text(dat.name + " | ACME");
+
+    //show content
+
+    cont.css( { "display" : "flex", "flex-flow" : "row-wrap", "width" : "100%", "justify-content" : "space-between"});
+
 }
 
 function toTitleCase(str) {
