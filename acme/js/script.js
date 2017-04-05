@@ -34,7 +34,7 @@ function makePage(name) {
     var info = $('#product-info');
     info.html('');
     info.append("<h1>" + dat.name + "</h1>");
-    info.append("<h2>" + dat.price + "</h2>");
+    info.append("<h2>$" + dat.price + "</h2>");
     info.append("<ul>");
     info.append("<li>" + dat.description + "</li>");
     info.append("<li>" + "Manufactured by: " + dat.manufacturer + "</li>");
@@ -45,7 +45,7 @@ function makePage(name) {
 
     //show content
 
-    cont.css( { "display" : "flex", "flex-flow" : "row-wrap", "width" : "100%", "justify-content" : "space-between"});
+    cont.css( { "display" : "flex", "flex-flow" : "row wrap", "width" : "100%", "justify-content" : "space-between"});
 
 }
 

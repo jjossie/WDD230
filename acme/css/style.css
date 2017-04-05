@@ -22,7 +22,7 @@ header {
 nav {
     background-color: #990033;
     color: #FFFFFF;
-    height: 50px;
+    height: 70px;
 }
 
 nav ul {
@@ -39,7 +39,6 @@ nav li {
     padding: 5px;
     font-size: 12pt;
     cursor: pointer;
-
 }
 
 nav li a {
@@ -84,6 +83,10 @@ main {
     padding-left: 40px;
     margin-right: 10px;
     height: auto;
+}
+
+#button {
+    list-style: none;
 }
 
 #lower-area {
@@ -137,7 +140,8 @@ main {
 }
 
 figure {
-    max-width: 350px;
+    max-width: 300px;
+    flex-basis: 300px;
 }
 
 
@@ -153,7 +157,7 @@ footer {
 
 @media only screen and (min-width: 700px) {
     #container {
-        width: 70%;
+        width: 80%;
         margin: auto;
     }
 }
