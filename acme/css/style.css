@@ -6,7 +6,7 @@ body {
 }
 
 #container {
-    width: 100%;
+    width:100%;
     background-color: #FFFFFF;
 }
 
@@ -87,4 +87,26 @@ main {
 }
 .recipe p{
     text-align: center;
+}
+#product-image img {
+    max-width:70%;
+}
+figure{
+    max-width:350px;
+}
+
+/*Footer*/
+footer{
+    padding: 15px;
+    border-top: 1px solid black;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (min-device-width: 700px){
+    #container{
+        width: 70%;
+        margin: auto;
+    }
 }

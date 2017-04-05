@@ -27,8 +27,18 @@ function makePage(name) {
     var cont = $('#content');
     // Insert page content
     $('#home').hide();
-    $('#content h2').html(dat.name);
 
+    $('#product-image').html("<img alt='product image' src='" + dat.path + "'>");
+
+    //insert product info
+    var info = $('#product-info');
+    info.html('');
+    info.append("<h1>" + dat.name + "</h1>");
+    info.append("<h2>" + dat.price + "</h2>");
+    info.append("<ul>");
+    info.append("<li>" + dat.description + "</li>");
+    info.append("<li>" + "Manufactured by: " + dat.manufacturer + "</li>");
+    info.append("<li>Reviews: " + dat.reviews + "/5 stars</li>");
 
     cont.show();
 }
