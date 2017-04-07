@@ -35,20 +35,20 @@ nav {
     height: 100px;
 }
 
-a:link,
-a:visited {
+nav>a:link,
+nav>a:visited {
     text-decoration: none;
     color: aliceblue;
     background-color: inherit;
 }
 
-a:hover,
-a:active {
+nav>a:hover,
+nav>a:active {
     color: #11331E;
     background-color: aliceblue;
 }
 
-a {
+nav>a {
     flex: 1;
     text-align: center;
     display: flex;
