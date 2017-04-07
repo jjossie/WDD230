@@ -1,5 +1,6 @@
 body {
     background-color: #307589;
+    font-family: "Georgia", sans-serif;
     color: #10252B;
 }
 
@@ -7,6 +8,7 @@ body {
     width: 940px;
     margin: 0 auto;
     background-color: aliceblue;
+    border-radius: 20px;
 }
 
 section {
@@ -45,7 +47,11 @@ nav >ul>li {
     /*display: inline-block;
     width: 120px;
     height: inherit;*/
+    list-style: none;
     display: inline-block;
+    flex-basis: 100px;
+    min-width: 100px;
+    height: 80px;
 }
 
 nav>ul>li>a {
@@ -55,6 +61,11 @@ nav>ul>li>a {
 header {
     height: 100px;
     background-color: #35A05D;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+}
+main{
+    padding: 20px;
 }
 
 footer {
@@ -71,6 +82,8 @@ footer>p {
 
 #logo {
     vertical-align: middle;
+    width: 110;
+    height: 91;
 }
 
 
