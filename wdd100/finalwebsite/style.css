@@ -1,14 +1,11 @@
-body {
-    background-color: #307589;
-    font-family: "Georgia", sans-serif;
-    color: #10252B;
-}
+
 
 #content {
     width: 940px;
     margin: 0 auto;
     background-color: aliceblue;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 section {
@@ -19,42 +16,45 @@ article {
     vertical-align: middle;
     padding: 10px;
 }
-article > h2 {
+
+article>h2 {
     text-align: center;
 }
-
-
-/*
-article {
-    display: inline-block;
-    width: 48%;
-    margin: auto;
-    margin-top: 0px;
-}*/
 
 .article-pic {
     width: 420px;
 }
 
 
+/*Navigation Styling*/
+
 nav {
-/*    display: inline-block;*/
     display: flex;
-    width:100%
+    justify-content: space-around;
+    align-items: stretch;
+    height: 100px;
 }
 
-nav >ul>li {
-    /*display: inline-block;
-    width: 120px;
-    height: inherit;*/
-    list-style: none;
-    display: inline-block;
-    flex-basis: 100px;
-    min-width: 100px;
+a:link,
+a:visited {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: inherit;
 }
 
-nav>ul>li>a {
+a:hover,
+a:active {
     color: #11331E;
+    background-color: aliceblue;
+}
+
+a {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 header {
@@ -63,7 +63,17 @@ header {
     border-top-left-radius: 19px;
     border-top-right-radius: 19px;
 }
-main{
+
+
+/*Stock Styling*/
+
+body {
+    background-color: #307589;
+    font-family: "Georgia", sans-serif;
+    color: #10252B;
+}
+
+main {
     margin: 20px;
 }
 
@@ -84,7 +94,6 @@ footer>p {
     width: 110;
     height: 91;
 }
-
 
 #banner {
     display: block;
